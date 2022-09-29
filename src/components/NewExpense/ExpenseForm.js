@@ -6,11 +6,11 @@ const ExpenseForm = (props) => {
   const [EnteredTitle, setEnteredTitle] = useState("");
   const [EnteredAmout, setEnteredAmout] = useState("");
   const [EnteredDate, setEnteredDate] = useState("");
-  const [userInput, setUserInput] = useState({
-    EnteredTitle: "",
-    EnteredAmout: "",
-    EnteredDate: "",
-  });
+  // const [userInput, setUserInput] = useState({
+  //   EnteredTitle: "",
+  //   EnteredAmout: "",
+  //   EnteredDate: "",
+  // });
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
@@ -18,7 +18,7 @@ const ExpenseForm = (props) => {
     //   ...userInput,
     //   EnteredTitle: event.target.value,
     // });
-    // setUserInput((...prevState) => {
+    // setUserInput((...prevState) => {sakdjfh
     //   return { ...prevState, EnteredTitle: event.target.value }; // you Should always keep the prevState (Store)
     // });
   };
@@ -45,6 +45,7 @@ const ExpenseForm = (props) => {
     };
     // console.log(expenseData);
     onSaveExpenseData(expenseData);
+
     setEnteredAmout("");
     setEnteredDate("");
     setEnteredTitle("");
