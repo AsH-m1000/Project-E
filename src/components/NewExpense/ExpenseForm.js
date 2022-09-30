@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
-  const { onSaveExpenseData } = props;
+  const { onSaveExpenseData, onCancel } = props;
   const [EnteredTitle, setEnteredTitle] = useState("");
   const [EnteredAmout, setEnteredAmout] = useState("");
   const [EnteredDate, setEnteredDate] = useState("");
@@ -83,6 +83,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={onCancel}>
+          CanCel
+        </button>
         <button type="submit">AddExpense</button>
       </div>
     </form>
